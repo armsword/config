@@ -1,0 +1,13 @@
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ServerAliveInterval 60
+    ControlPersist yes
+Host Github
+    HostName *.github.com	 
+    IdentityFile ~/.ssh/id_rsa
+    User armsword
+Host XXXX
+    HostName *.XXXX.com
+    IdentityFile ~/.ssh/id_rsa.xxxx
+    User XXX
